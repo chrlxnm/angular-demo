@@ -1,20 +1,30 @@
-<h1> User Group </h1>
+<div class="container">
+    <div class="white-card">
+      <div class="header-container">
 
-<p-table [value]="groupList" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
-  <ng-template pTemplate="header">
-      <tr>
-          <th>User Group Code</th>
-          <th>User Group Name</th>
-          <!-- <th>Category</th>
-          <th>Quantity</th> -->
-      </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-group>
-      <tr>
-          <td class="user-p">{{ group.code }}</td>
-          <td>{{ group.name }}</td>
-          <!-- <td>{{ product.category }}</td>
-          <td>{{ product.quantity }}</td> -->
-      </tr>
-  </ng-template>
-</p-table>
+        <h1> User Group </h1>
+
+        <p-button label="Add"></p-button>
+
+      </div>
+
+      <p-table [value]="groupList" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>User Group Code</th>
+                <th>User Group Name</th>
+                <!-- <th>Category</th>
+                <th>Quantity</th> -->
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-group>
+            <tr>
+                <td class="user-p">{{ group.code }}</td>
+                <td>{{ group.name }}</td>
+                <!-- <td>{{ product.category }}</td>
+                <td>{{ product.quantity }}</td> -->
+            </tr>
+        </ng-template>
+      </p-table>
+    </div>
+</div>
