@@ -1,0 +1,38 @@
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow:  0 4px 5px -2px #afafaf;
+  margin-bottom: 10pt;
+  padding: 8px;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.content {
+  padding: 8px;
+  min-height: calc(100vh - 100px);
+}
+
+.footer-container {
+  background-color: #0041ae;
+  color: #fff;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mandiri-copyright {
+  margin: 0;
+}
